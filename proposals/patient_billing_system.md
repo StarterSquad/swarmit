@@ -1,5 +1,0 @@
-Hi,
-
-we are
-
-by

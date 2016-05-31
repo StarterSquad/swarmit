@@ -1,0 +1,44 @@
+Description
+
+we inspected your courrent application description, and its a heavy process based app. 
+As we saw it, it handles process of calculating invoices according to the various government and health insurance rules in Australia.
+
+PROCESS:
+1) patient data
+2) medical procedure
+3) lodging for doctors claims via Medicare gateway to all of the health funds
+4) payments are then proceeded by the payers(???) and the Access DB records payments against accounts(????)
+5) reports for clients(medical specialists) force.com
+6) and corresponding invoices for clients
+7) merged reports and invoices for clients
+8) and other customer support services to help handling conflicts in the process
+
+We can help you in improving your business process, considering that you are open to use amazon aws, we can use aws lambda as an architecture for your business process.
+
+Migration procedure/estimate:
+1) 5k we need to have a picture of whole business process, write it down to was events, and plug old systems using those events. 
+    To move the process flow definition out of ms-access?
+2) 10k to move the process request data out of msaccess to aws, and build the lambdas, which will take care of state/event/process transitions/steps.
+3) 15k we start process migration from the first step, replacing 1 step at a time.
+3.1) billing
+3.2) reports
+3.3) invoice generation
+3.4) notifications
+3.5) payments
+5) 6k ui/ux to generate commands.
+
+More budget:
+1) conflict resolution/how to automate/see overview of process. 
+
+
+Questions:
+1) do you have diagram of your business processes
+2) database schema or example data
+3) links to api of gateway Medicare
+4) payments processing how its done currently
+
+StarterSquad development process
+Our development process is based on weekly iterations. Each iteration ends with a demo. 
+Budget for the iteration has to be present before the team can start working.
+During the demo we will be showing the progress to all stakeholders. 
+After the demo we will plan the next iteration according to the feature set and the feedback collected. This is not a fixed price quote.
