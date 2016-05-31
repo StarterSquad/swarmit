@@ -30,7 +30,6 @@ Migration procedure/estimate:
 More budget:
 1) conflict resolution/how to automate/see overview of process. 
 
-
 Questions:
 1) do you have diagram of your business processes
 2) database schema or example data
