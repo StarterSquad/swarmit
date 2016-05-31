@@ -3,14 +3,15 @@ https://squads.com/projects/574c2fabde25192704c6c690
 
 Description
 
-we inspected your courrent application description, and its a heavy process based app. 
-As we saw it, it handles process of calculating invoices according to the various government and health insurance rules in Australia.
+We inspected your courrent application description, and its a heavy process based app. 
+As we saw it, it handles process of calculating invoices according to the various government and health insurance rules in Australia. Since you're running the business already with low automation, it is a perfect candidate to introduce an event driven architecture incrementally see [this article](https://articles.squads.com/the-event-driven-business-e5954f748d51#.hnkbqrg1v). In this proposal we aim to add business value through weekly increments. We would go for the most expensive manual processes first and work our way through so you get the best value from our efforts.
 
 PROCESS:
+
 1) patient data
 2) medical procedure
 3) lodging for doctors claims via Medicare gateway to all of the health funds
-4) payments are then proceeded by the payers(???) and the Access DB records payments against accounts(????)
+4) payments are then proceeded by the payers(??) and the Access DB records payments against accounts(??)
 5) reports for clients(medical specialists) force.com
 6) and corresponding invoices for clients
 7) merged reports and invoices for clients
@@ -19,6 +20,7 @@ PROCESS:
 We can help you in improving your business process, considering that you are open to use amazon aws, we can use aws lambda as an architecture for your business process.
 
 Migration procedure/estimate:
+
 1) 5k we need to have a picture of whole business process, write it down to was events, and plug old systems using those events. 
     To move the process flow definition out of ms-access?
 2) 10k to move the process request data out of msaccess to aws, and build the lambdas, which will take care of state/event/process transitions/steps.
@@ -34,13 +36,15 @@ More budget:
 1) conflict resolution/how to automate/see overview of process. 
 
 Questions:
-1) do you have diagram of your business processes
-2) database schema or example data
-3) links to api of gateway Medicare
-4) payments processing how its done currently
 
-StarterSquad development process
+1) do you have diagram of your business processes?
+2) do you have a database schema or example data?
+3) can we have links to api of gateway Medicare?
+4) could we see the current process of payments processing in detail (screenshare, video)?
+
+Development process
+-------------
 Our development process is based on weekly iterations. Each iteration ends with a demo. 
-Budget for the iteration has to be present before the team can start working.
+Budget for the iteration has to be booked in Squads before the team can start working. (see https://www.youtube.com/watch?v=17uPOmgFFo4 for a walkthrough of Squads.com)
 During the demo we will be showing the progress to all stakeholders. 
-After the demo we will plan the next iteration according to the feature set and the feedback collected. This is not a fixed price quote.
+After the demo we will plan the next iteration according to the feature set and the feedback collected. You can stop or change your mind at any time. This is not a fixed price quote.
