@@ -41,6 +41,7 @@ Questions:
 2) do you have a database schema or example data?
 3) can we have links to api of gateway Medicare?
 4) could we see the current process of payments processing in detail (screenshare, video)?
+5) what are the biggest pain point: where are most (data entering) mistakes made or what work costs most time.
 
 Development process
 -------------
