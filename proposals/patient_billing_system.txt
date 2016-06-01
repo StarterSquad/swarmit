@@ -4,47 +4,53 @@ https://squads.com/projects/574c2fabde25192704c6c690
 Description
 
 We inspected your courrent application description, and its a heavy process based app. 
-As we saw it, it handles process of calculating invoices according to the various government and health insurance rules in Australia. Since you're running the business already with low automation, it is a perfect candidate to introduce an event driven architecture incrementally see [this article](https://articles.squads.com/the-event-driven-business-e5954f748d51#.hnkbqrg1v). In this proposal we aim to add business value through weekly increments. We would go for the most expensive manual processes first and work our way through so you get the best value from our efforts.
+As we saw it, it handles process of calculating invoices according to the various government and health insurance rules in Australia. 
+Since you're running the business already with low automation, it is a perfect candidate to introduce an event driven architecture incrementally see [this article](https://articles.squads.com/the-event-driven-business-e5954f748d51#.hnkbqrg1v). 
+In this proposal we aim to add business value through weekly increments. We would automate the most expensive manual processes first and work our way through so you get the best value from our efforts.
 
 PROCESS:
 
 1) patient data
 2) medical procedure
 3) lodging for doctors claims via Medicare gateway to all of the health funds
-4) payments are then proceeded by the payers(??) and the Access DB records payments against accounts(??)
-5) reports for clients(medical specialists) force.com
+4) payments are then proceeded by the payers(??) and the MS Access DB records payments against accounts(??)
+5) reports for clients (medical specialists) force.com
 6) and corresponding invoices for clients
 7) merged reports and invoices for clients
 8) and other customer support services to help handling conflicts in the process
 
-We can help you in improving your business process, considering that you are open to use amazon aws, we can use aws lambda as an architecture for your business process.
+We can help you in improving your business process, considering that you are open to use Amazon AWS, we can use Lambda as an architecture for your business process.
 
 Migration procedure/estimate:
 
 1) 5k we need to have a picture of whole business process, write it down to was events, and plug old systems using those events. 
-    To move the process flow definition out of ms-access?
-2) 10k to move the process request data out of msaccess to aws, and build the lambdas, which will take care of state/event/process transitions/steps.
+    To move the process flow definition out of MS Access?
+2) 10k to move the process request data out of MS Access to AWS, and build the lambdas, which will take care of state/event/process transitions/steps.
 3) 15k to start process migration from the first step, replacing 1 step at a time that has the biggest impact. As soon as a step is automated, it can be used in production, delivering value.
 3.1) billing
 3.2) reports
 3.3) invoice generation
 3.4) notifications
 3.5) payments
-5) 6k ui/ux to generate commands.
+5) 6k ui/ux to generate commands
+5.1) depending on how you use Slack introduce a chat bot as input/output and feedback mechanism for the entire team
 
 More budget:
+
 1) conflict resolution/how to automate/see overview of process. 
 
 Questions:
 
 1) do you have diagram of your business processes?
-2) do you have a database schema or example data?
+2) do you have the database schema, source code of the MS Access forms or any other example data?
+2.1) just to understand the complexity: how many forms you use?
 3) can we have links to api of gateway Medicare?
 4) could we see the current process of payments processing in detail (screenshare, video)?
 5) what are the biggest pain point: where are most (data entering) mistakes made or what work costs most time.
+6) is MS Access used to retrieve historical information or only for the active cases?
 
 Development process
--------------
+-------------------
 Our development process is based on weekly iterations. Each iteration ends with a demo. 
 Budget for the iteration has to be booked in Squads before the team can start working. (see https://www.youtube.com/watch?v=17uPOmgFFo4 for a walkthrough of Squads.com)
 During the demo we will be showing the progress to all stakeholders. 
