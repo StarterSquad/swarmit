@@ -24,7 +24,7 @@ Migration procedure/estimate:
 1) 5k we need to have a picture of whole business process, write it down to was events, and plug old systems using those events. 
     To move the process flow definition out of ms-access?
 2) 10k to move the process request data out of msaccess to aws, and build the lambdas, which will take care of state/event/process transitions/steps.
-3) 15k we start process migration from the first step, replacing 1 step at a time.
+3) 15k to start process migration from the first step, replacing 1 step at a time that has the biggest impact. As soon as a step is automated, it can be used in production, delivering value.
 3.1) billing
 3.2) reports
 3.3) invoice generation
