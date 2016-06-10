@@ -100,6 +100,13 @@ the project and recommend an initial planning of about 10 weeks with a budget of
 This action-plan is provided as a starting-point and may evolve from week to week depending on the
 outcome of our weekly demos and the eventual changes in the requirements.
 
+As a side-note, as your requirements document was quite technical, we were not affraid to make a
+technical proposal. Feel free to ask for more extra information or clarification if you need any.
+
+Also you might have noticed this proposal mentions a lot of libraries and tools; our phylosophy is
+that by using existing robust tools to solve know problems we will be able to spend more time on
+the issues that will add valuable unique features to your project.
+
 
 ## Development process
 
